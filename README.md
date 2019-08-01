@@ -8,7 +8,7 @@ Add the  method "xml" integrating the laravel's response, converting eloquent re
 ### Composer Installation
 
 ```php
-composer require jailtonsc/laravel-response-xml
+composer require seokjoon/laravel-response-xml
 ```
 
 ### Integration with Laravel 5.*
@@ -51,7 +51,7 @@ Setting by code
 ```php
 $config = [
         'template' => '<test></test>',
-        'rowName' => 'name'
+        'rowName' => [ancestor, parent, child],
     ];
 
 Route::get('/', function () {
@@ -70,7 +70,7 @@ Or
 ```php
 $config = [
         'template' => '<test></test>',
-        'rowName' => 'name'
+        'rowName' => [ancestor, parent, child],
     ];
 
 $xml = Xml::asXml(User::all(), $config);

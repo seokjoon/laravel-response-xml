@@ -23,5 +23,6 @@ return [
      * value null = <row_0></row_0>
      * value name item = <item></item>
      */
-    'rowName' => null 
+    //'rowName' => null
+    'rowName' => [],
 ];
